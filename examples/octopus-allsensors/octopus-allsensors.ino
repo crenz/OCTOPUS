@@ -32,6 +32,8 @@ void setup() {
   // put your setup code here, to run once:
     Serial.begin(115200);
 
+   while (!Serial);
+
     Serial.println("                             "); // print some spaces to let the Serial Monitor catch up
     Serial.println();
     Serial.println("--- Initializing Octopus --- ");
@@ -51,5 +53,5 @@ void setup() {
 }
 
 void loop() {
-  loopSensors();
+    loopSensors();
 }

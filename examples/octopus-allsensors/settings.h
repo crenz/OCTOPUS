@@ -4,9 +4,16 @@
 #ifdef ENABLE_BME280
 #include <Adafruit_BME280.h>  // Make sure you have the Adafruit BME280 library installed
 #endif
+#ifdef ENABLE_BME680
 #include <Adafruit_BME680.h>  // Make sure you have the Adafruit BME680 library installed
+#endif
+#ifdef ENABLE_BNO055
 #include <Adafruit_BNO055.h>  // Make sure you have the Adafruit BNO055 library installed
+#include <utility/imumaths.h>
+#endif
+#ifdef ENABLE_NEOPIXEL
 #include <Adafruit_NeoPixel.h> // Make sure you have the Adafruit NeoPixel library installed
+#endif
 
 // ---- Hardware Configuration ----
 
